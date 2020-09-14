@@ -18,3 +18,6 @@ print(message.title())
 print("Hello" + "!!!")
 
 # OBS: if we want to output numbers as strings we use str() function
+# Example:
+# print(45 + " words") # error = TypeError: unsupported operand type(s) for +: 'int' and 'str'
+print(str(45) + " words") # OK
