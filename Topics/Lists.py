@@ -70,7 +70,7 @@ print(numbers)
 numbers = list(range(0, 101, 10)) # 0 10 20 ... 100
 print(numbers)
 
-# Popular function when working with lists
+# Popular functions when working with lists
 elements = [1, 2, 3]
 print(sum(elements)) # Sum of the elements in a list
 print(max(elements)) # Greatest element in a list
