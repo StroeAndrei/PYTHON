@@ -15,7 +15,6 @@ else:
     print('Wait to grow up.')
 
 # In Python we can use the while loop
-
 number = 1;
 
 while number <= 10:

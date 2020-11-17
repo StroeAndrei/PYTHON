@@ -59,10 +59,10 @@ print()
 for food in fav_food.values():
 	print(food)
 
-# Iterare peste valorile unui dictionar fara duplicate
-# Utilizam functia set()
-# Un set este similar cu o lista, cu diferenta ca fiecare
-# element din set trebuie sa fie unic
+# Iterate over the values of a dictionary without duplicates
+# We use the set() function
+# A set is similar to a list, with the difference that each 
+# element in a set has to be unique
 # The order of the elements in a set is random and elements are unindexed
 subscriptions = {
 	'Mark': 90.00,
