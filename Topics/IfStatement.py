@@ -1,6 +1,5 @@
 # if/else/elif
 # if = check if an expression is true
-
 foodList = ['pizza', 'salad', 'fried chicken', 'hamburger']
 
 for food in foodList:
