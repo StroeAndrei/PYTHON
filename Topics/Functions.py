@@ -40,13 +40,13 @@ def some_pet(animal_type, pet_name):
 
 some_pet(animal_type='cat', pet_name="fuzzy")
 
-# Python assigns the value 'cat' to the animal_type paramater
+# Python assigns the value 'cat' to the animal_type parameter
 # In this case, the order doesn't matter anymore because we 
 # explicitly specify the name-value pairs
 some_pet(pet_name="fuzzy", animal_type="cat")
 
 # 3. Implicit values
-# We can define an implicit value for each paramater
+# We can define an implicit value for each parameter
 def some_pet(pet_name, animal_type="turtle"):
     print("My " + animal_type + "'s name is " + pet_name.title() + ".")
 
