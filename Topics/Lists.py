@@ -96,6 +96,41 @@ initialList = ['ab', 'zy', 'cd']
 copyOfInitialList = initialList[:]
 print(copyOfInitialList)
 
+# TOP slicing expressions for working with lists
+# L = List
+# L[i] = the ith element of L
+# L[i:j] = the list of elements from index i to index j (but not 
+# including j)
+# L[:j] = the first j elements (not inlcuding j)
+lst = [2, 3, 1, 43, 11, 43, 0]
+print(lst[:5]) # form index 0 -> to index 4
+# L[i:] = elements from i to n (not inluding i)
+lst2 = [89, 32231, 42, 111, 322, 909]
+print(lst2[4:])
+# L[-3:] = tha last 3 elements
+lst3 = ['a', 'e', 'r', 'b', 'c']
+print(lst3[-3:])
+# L[i:j:k] =  elements from the ith up to the jth (but not including
+# j) taking only every kth element
+lst4 = [32, 13, 112, 3131, 11, 0, 43]
+print(lst4[0:6:1])
+print(lst4[0:6:2])
+# L[::2] = the elements of L with even indices
+lst5 = [33, 21, 11, 90, 76, 65, 43, 89, 13]
+print(lst5[::3]) # ::3 | index (divides)
+print(lst5[::5])
+# L[::-1] = the reverse copy of L
+lst6 = ['a', 'b', 'c']
+print(lst6[::-1])
+
+# TOP methods for working with lists
+# len(L) = number of elements in list L
+# sorted(L) = returns a sorted copy of the list L
+# L.sort() = sorts L in place
+# L.count(c) = the number of occurences of c in L
+# c in L = is the element c found in L
+# L.append(c) = append c to the end of L
+# L.pop() = extracts and returns the last element of L
 
 
 
