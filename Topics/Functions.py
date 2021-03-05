@@ -178,3 +178,14 @@ user_profile = build_profile('jim', 'jones', age='12', username='jimjones76')
 print(user_profile)
 
 
+# A function can serve as an iterator, as long as it can produce elements
+# at different moments of its execution using the keyword yield
+def all_pairs(L):
+    n = len(L)
+    for i in range(n):
+        for j in range(i + 1, n):
+            yield (L[i], L[j])
+
+test = all_pairs([1, 2, 3, 4, 5])
+print(test.next)
+

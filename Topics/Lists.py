@@ -55,6 +55,8 @@ for letter in letters:
 
 # Automatic generation of values from an interval
 # range() function
+# OBS: range returns an object known as an iterator, which produces integers
+# one by one, if and when the for loop claims a value
 squares = []
 for number in range(1, 21): # OBS: we want 1 to 20, 21 is not included
     square = number**2
@@ -77,8 +79,21 @@ print(max(elements)) # Greatest element in a list
 print(min(elements)) # Smallest element in a list
 
 # List Comprehension - a concise method to construct a list
-cubes = [value**3 for value in range(1, 101)]
+cubes = [value ** 3 for value in range(1, 101)]
 print(cubes)
+
+# it would translate to: {x^2|x=0,...,n} math notation
+squared_numbers = [x ** 2 for x in range(1, 11)]
+print(squared_numbers)
+
+# initialize a list of length n - list of 50 elements of value 0
+listLenN = [0 for _ in range(51)]
+print(listLenN)
+
+# counters for letters in a string
+just_a_string = "Hello FMI"
+nb_occurrences = {letter: 0 for letter in just_a_string}
+print(nb_occurrences)
 
 # List slicing - selection of a series of values
 numbers = [90, 56, 88, 73, 52, 2, 11, 19]
@@ -131,6 +146,18 @@ print(lst6[::-1])
 # c in L = is the element c found in L
 # L.append(c) = append c to the end of L
 # L.pop() = extracts and returns the last element of L
+
+# handle values of a list along with their position (indices)
+L = [1, 98, 43, 190]
+
+for index in range(len(L)):
+    value = L[index]
+    print(str(index) + " : " + str(value))
+
+# for a more compact expression of the loop above
+# we can use the function enumerate
+for index, value in enumerate(L):
+    print(str(index) + " - " + str(value))
 
 
 
